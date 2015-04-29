@@ -1,0 +1,390 @@
+@import url("font/fonts.css");
+body{
+    font-family: "AvenirLTStd-Light";
+}
+.se-overlay{
+    background: url("../images/filter-bg.png");
+    background-size: 1500px;
+}
+.se-slope:nth-child(1) .se-overlay{
+    /*background-attachment: fixed;*/
+}
+.se-container {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.se-slope{
+    position: relative;
+    margin: 0 -150px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center;
+    overflow: visible;
+}
+.se-content{
+    margin: 0 auto;
+    overflow: visible;
+}
+.tr-right{
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+.tr-left{
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+.se-slope:nth-child(1) .se-content{
+    padding: 500px 100px 100px 100px;
+}
+.se-slope:nth-child(1){
+    background: #192c35;
+    background: -moz-linear-gradient(left, #192c35 0%, #181b1f 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #192c35), color-stop(100%, #181b1f));
+    background: -webkit-linear-gradient(left, #192c35 0%, #181b1f 100%);
+    background: -o-linear-gradient(left, #192c35 0%, #181b1f 100%);
+    background: -ms-linear-gradient(left, #192c35 0%, #181b1f 100%);
+    background: linear-gradient(to right, #192c35 0%, #181b1f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#192c35', endColorstr='#181b1f',GradientType=1 );
+    margin-top: -400px;
+    z-index: 1;
+}
+.se-slope:nth-child(2){
+    background: #ffffff;
+}
+.se-slope:nth-child(2) .se-content{
+    padding: 50px 100px 50px 100px;
+}
+.se-slope:nth-child(3){
+    background: url("../images/curtain-3.png");
+    background-position-y: -450px;
+    background-size: 100%;
+    z-index: 1;
+}
+.se-slope:nth-child(3) .se-content{
+    padding: 0 100px 1000px 100px;
+}
+.se-slope:nth-child(4) .se-content{
+    padding: 0 100px 0px 100px;
+}
+.se-slope:nth-child(4){
+    background: #ffffff;
+    z-index: 1;
+}
+.se-slope:nth-child(5) .se-content{
+    padding: 0 0 0 0;
+}
+.se-slope:nth-child(5) img{
+    width: 100%;
+}
+.container {
+    width: 980px;
+    position: relative; }
+
+.centerize-text {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center; }
+.white{
+    color: #ffffff;
+}
+.main-marker1 .text{
+    text-align: left;
+    padding-right: 23px;
+}
+.main-marker1 {
+    width: calc(100% - 313px);
+    float: left; }
+
+.main-marker2 {
+    width: calc(100% - 313px);
+    float: left;
+    margin: 140px 0 0 130px;
+}
+
+.main-frame {
+    width: 250px;
+    padding-top: 70px; }
+
+.fl-right {
+    float: right;
+    text-align: right;
+    padding: 0 0 0 35%;
+}
+.download-button {
+    width: 230px;
+    padding: 5px 0px 5px 0;
+    display: block;
+    margin: 45px auto 0;
+    border: 1px solid #2cc5c5;
+    border-radius: 38px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+    text-decoration: none;
+    /*background: url("../images/coming-soon-app-store.png")no-repeat;
+    background-size: 230px auto;*/
+}
+.download-button:hover,
+.download-button:focus,
+.download-button:active,
+.download-button:visited{ color: #ffffff; text-decoration: none;}
+.pro-screen img {
+    position: absolute;
+    top: -200px; left: 0; width: 100%;
+}
+.frame-mid {
+    background: #000; }
+
+.main-pro {
+    float: right; }
+
+.pro-img {
+    float: right;
+    position: absolute;
+    top: 52px;
+    right: 0;
+    z-index: 1;}
+
+.demo-1 {
+    width: 439px;
+    float: left ;
+    margin-top: -400px;
+}
+
+.demo-2 h1,.demo-2 p {
+    float: left;
+    display: block;
+    clear: both;
+}
+.demo-2 {
+    width: calc( 100% - 439px);
+    float: left;
+    margin-top: -363px;
+}
+
+.demo-2 img {
+    float: left;
+}
+.demo-2 .item-1 {
+    padding-right: 0px;
+
+}
+.demo-2 .item-2 {
+    padding-right: 11px;
+    padding-left: 22px;
+    width: 255px;
+}
+.demo-3
+{
+    width: 500px;
+    height: 500px;
+    display: block;
+    float: left;
+}
+.apple  {
+    background: url("../images/coming-soon-app-store.png");
+    width: 234px;
+    height: 70px;
+    display: block;
+    float: left;
+    margin-top: 87px;
+    background-size: 234px auto;
+}
+.capsule  {
+    background: url("../images/capsule.png")no-repeat;
+    width: 142px;
+    height: 192px;
+    color:#1a333d;
+    display: block;
+    float: right;
+    margin: 36px 0 0 0;
+    text-align: center;
+    line-height: 344px;
+    font-weight: 200;
+    font-size: 34px;
+    text-decoration: none;
+}
+.capsule:hover, .capsule:active, .capsule:focus, .capsule:visited {
+    color:#1a333d;
+    text-decoration: none;
+}
+.text1 {
+    width: 376px;
+    float: left;
+    text-align: left;
+    padding-right: 76px;
+
+}
+.container.footer{
+    width:1400px;
+}
+h1 {font-size: 30px; font-weight: 400;}
+p {font-size: 22px; font-weight: 200;}
+
+/* Media Queries */
+@media screen and (max-width: 1010px) {
+    .se-slope:nth-child(1) .se-content{
+        padding: 500px 40px 100px 50px !important;
+    }
+    .se-slope:nth-child(2) .se-content{
+        padding: 71px 41px 100px 82px !important;
+    }
+    .se-slope:nth-child(3) .se-content {
+        padding: 18px 0 700px 0 !important;
+    }
+    .se-slope:nth-child(4) .se-content{
+        padding: 116px 150px 0 150px;
+    }
+    .container    {
+        width: 600px;
+    }
+    .demo-1,.demo-2  {
+        width: 50%;
+    }
+    .demo-1 img {
+        width: 201px;
+    }
+    .demo-2 .item-1 {
+        width: 100%;
+        padding: 0 63px 0 63px;
+    }
+    .demo-2 .item-2 {
+        width: 100%;
+        padding: 0 63px 0 63px;
+    }
+
+    h1 {font-size: 27px;}
+    p {font-size: 18px;}
+    .text1{
+        width: auto;
+    }
+    .main-marker2{
+        margin: 0 0 0 0 !important;
+    }
+    .container.footer{
+        width:800px;
+    }
+}
+@media screen and (max-width: 767px) {
+
+    .se-slope:nth-child(3) .se-content {
+        padding: 18px 0 540px 0 !important;
+    }
+    .container    {
+        width: 478px;
+    }
+    .main-pro{
+        width: 180px;
+    }
+    .demo-1{
+        width: 60%;
+    }
+    .demo-2{
+        width: 40%;
+    }
+    .demo-1 img {
+        width: 100%;
+
+        padding-right: 35px;
+    }
+    .demo-2 .item-1 {
+        width: 100%;
+        padding: 0 30px 0 30px;
+    }
+    .demo-2 .item-2 {
+        width: 100%;
+        padding: 0 30px 0 30px;
+    }
+    .main-marker1 {
+        width: 100%;
+        float: left;
+    }
+    .demo-3 {
+        width: 100%;
+        height: auto;
+        clear: both;
+    }
+    .container.footer{
+        width:700px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .container    {
+        width: 300px;
+    }
+    .se-slope:nth-child(1) .se-content {
+        padding: 429px 147px 100px 130px !important;
+    }
+    .se-slope:nth-child(2) .se-content {
+        padding: 71px 120px 100px 130px !important;
+    }
+    .se-slope:nth-child(3) .se-content {
+        padding: 18px 0 380px 0 !important;
+    }
+    .se-slope:nth-child(4) .se-content {
+        padding: 161px 150px 0 150px;
+    }
+    .main-marker2, .pro-img {
+        width: 50%;
+    }
+    .main-frame,.main-marker1, .main-frame a, .main-frame a img {
+        width: 100%;
+    }
+    .main-pro {
+        width: 100%;
+    }
+    .demo-1 img, .demo-2 .item-1, .demo-2 .item-2 {
+
+        padding: 4px;
+        width: 122px;
+        float: left;
+    }
+    .demo-1, .demo-2  {
+        width: 100% !important;
+    }
+    .demo-2 {
+        margin-top: 0 !important;
+    }
+    .text1 {
+        padding:0 0 0 0 !important;
+    }
+    h1 {font-size: 20px;}
+    p {font-size: 13px;}
+    .capsule{
+        width: 82px;
+        height: 99px;
+        background-size: 82px 82px;
+        margin-top: 0;
+        line-height: 200px;
+        font-size: 21px;
+    }
+    .apple{
+        width: 116px;
+        height: 38px;
+        background-size: 116px 38px;
+        margin-top: 0;
+    }
+    .pro-screen img {
+        top: -100px;
+    }
+    .container.footer{
+        width:300px;
+    }
+    .download-button
+    {
+        font-size: 16px;
+    }
+}
