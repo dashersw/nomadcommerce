@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Urban Matters</title>
+    <link rel="stylesheet" href="../stylesheets/scss/style.css" />
+
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="../javascripts/bootstrap.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $( ".info-slide-arrow-left" ).click(function() {
+                $('.info-slide-arrow-right').removeClass('active');
+                $('.info-slide-arrow-left').addClass('active');
+            });
+            $( ".info-slide-arrow-right" ).click(function() {
+                $('.info-slide-arrow-left').removeClass('active');
+                $('.info-slide-arrow-right').addClass('active');
+            });
+            /*NAVBAR JS
+            $(".nav a").on("click", function(){
+                $(".nav").find(".active").removeClass("active");
+                $(this).parent().addClass("active");
+            });
+            NAVBAR JS END*/
+        });
+    </script>
+    <script>
+        setCarouselHeight('#carousel-example');
+
+        function setCarouselHeight(id)
+        {
+            var slideHeight = [];
+            $(id+' .item').each(function()
+            {
+                // add all slide heights to an array
+                slideHeight.push($(this).height());
+            });
+
+            // find the tallest item
+            max = Math.max.apply(null, slideHeight);
+
+            // set the slide's height
+            $(id+' .carousel-content').each(function()
+            {
+                $(this).css('height',max+'px');
+            });
+        }
+    </script>
+
+
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="../images/logo.png" class="main-logo"/></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li class="active"><a href="project.html">PROJECT</a></li>
+                            <li><a href="news.html">NEWS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-right hidden-xs" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <button type="submit" class="btn btn-default search-ico"></button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="frame">
+        <div class="wrapper project-details">
+
+        <section class="content content-1">
+            <div class="container">
+                <a href="project.html" class="turn-back">BACK</a>
+                <div class="project-item">
+                    <div class="pro-item-img col-lg-5 col-md-6 col-sm-5 col-xs-12">
+                        <img src="../images/pro-img-1.png">
+                    </div>
+                    <div class="pro-info-slide col-lg-7 col-md-6 col-sm-7 col-xs-12">
+                        <div id="pro-carousel-1" class="carousel slide pro-carousel" data-ride="carousel">
+
+                            <div class="col-xs-offset-1 col-xs-10 info-slider-text-area">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#pro-carousel-1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#pro-carousel-1" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item">
+                                        <div class="carousel-content">
+                                            <div>
+                                                <h3 class="info-slider-title">URBAN PLAY - PLAY LIGHTS</h3>
+                                                <p class="info-slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at pharetra mauris, eget ullamcorper arcu. Ut iaculis lacus tempor est consectetur ornare. Nullam tincidunt metus non arcu egestas, quis lacinia elit suscipit. Phasellus interdum arcu nunc, sit amet fringilla ipsum pharetra varius. Nulla gravida metus vitae volutpat egestas. Fusce ac lectus commodo, fermentum ipsum vitae, congue odio
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at pharetra mauris, eget ullamcorper arcu. Ut iaculis lacus tempor est consectetur ornare. Nullam tincidunt metus non arcu egestas, quis lacinia elit suscipit. Phasellus
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item active">
+                                        <div class="carousel-content">
+                                            <div>
+                                                <h3 class="info-slider-title">URBAN PLAY - PLAY LIGHTS</h3>
+                                                <p class="info-slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at pharetra mauris, eget ullamcorper arcu. Ut iaculis lacus tempor est consectetur ornare. Nullam tincidunt metus non arcu egestas, quis lacinia elit suscipit. Phasellus interdum arcu nunc, sit amet fringilla ipsum pharetra varius. Nulla gravida metus vitae volutpat egestas. Fusce ac lectus commodo, fermentum ipsum vitae, congue odio
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at pharetra mauris, eget ullamcorper arcu. Ut iaculis lacus tempor est consectetur ornare. Nullam tincidunt metus non arcu egestas, quis lacinia elit suscipit. Phasellus
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at pharetra mauris, eget ullamcorper arcu. Ut iaculis lacus tempor est consectetur ornare. Nullam tincidunt metus non arcu egestas, quis lacinia elit suscipit. Phasellus
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content content-2">
+            <div class="container">
+                <div class="project-item">
+                    <div class="pro-item-img col-lg-5 col-md-6 col-sm-5 col-xs-12">
+                        <img src="../images/pro-img-1.png">
+                    </div>
+                    <div class="pro-info-slide col-lg-7 col-md-6 col-sm-7 col-xs-12">
+                        <div id="pro-carousel-2" class="carousel slide pro-carousel" data-ride="carousel">
+
+                            <div class="col-xs-offset-1 col-xs-10 info-slider-text-area">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#pro-carousel-2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#pro-carousel-2" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item">
+                                        <div class="carousel-content">
+                                            <div>
+                                                <h3 class="info-slider-title">URBAN PLAY - PLAY LIGHTS</h3>
+                                                <p class="info-slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at pharetra mauris, eget ullamcorper arcu. Ut iaculis lacus tempor est consectetur ornare. Nullam tincidunt metus non arcu egestas, quis lacinia elit suscipit. Phasellus interdum arcu nunc, sit amet fringilla ipsum pharetra varius. Nulla gravida metus vitae volutpat egestas. Fusce ac lectus commodo, fermentum ipsum vitae, congue odio
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at pharetra mauris, eget ullamcorper arcu. Ut iaculis lacus tempor est consectetur ornare. Nullam tincidunt metus non arcu egestas, quis lacinia elit suscipit. Phasellus
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at pharetra mauris, eget ullamcorper arcu. Ut iaculis lacus tempor est consectetur ornare. Nullam tincidunt metus non arcu egestas, quis lacinia elit suscipit. Phasellus
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item active">
+                                        <div class="carousel-content">
+                                            <div>
+                                                <h3 class="info-slider-title">URBAN PLAY - PLAY LIGHTS</h3>
+                                                <p class="info-slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at pharetra mauris, eget ullamcorper arcu. Ut iaculis lacus tempor est consectetur ornare. Nullam tincidunt metus non arcu egestas, quis lacinia elit suscipit. Phasellus interdum arcu nunc, sit amet fringilla ipsum pharetra varius. Nulla gravida metus vitae volutpat egestas. Fusce ac lectus commodo, fermentum ipsum vitae, congue odio
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at pharetra mauris, eget ullamcorper arcu. Ut iaculis lacus tempor est consectetur ornare. Nullam tincidunt metus non arcu egestas, quis lacinia elit suscipit. Phasellus
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content content-1">
+            <div class="container">
+                <div class="project-item">
+                    <div class="pro-item-img col-lg-5 col-md-6 col-sm-5 col-xs-12">
+                        <img src="../images/pro-img-1.png">
+                    </div>
+                    <div class="pro-info-slide col-lg-7 col-md-6 col-sm-7 col-xs-12">
+                        <div id="pro-carousel-3" class="carousel slide pro-carousel" data-ride="carousel">
+
+                            <div class="col-xs-offset-1 col-xs-10 info-slider-text-area">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#pro-carousel-3" data-slide-to="0" class="active"></li>
+                                    <li data-target="#pro-carousel-3" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item">
+                                        <div class="carousel-content">
+                                            <div>
+                                                <h3 class="info-slider-title">URBAN PLAY - PLAY LIGHTS</h3>
+                                                <p class="info-slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at pharetra mauris, eget ullamcorper arcu. Ut iaculis lacus tempor est consectetur ornare. Nullam tincidunt metus non arcu egestas, quis lacinia elit suscipit. Phasellus interdum arcu nunc, sit amet fringilla ipsum pharetra varius. Nulla gravida metus vitae volutpat egestas. Fusce ac lectus commodo, fermentum ipsum vitae, congue odio
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at pharetra mauris, eget ullamcorper arcu. Ut iaculis lacus tempor est consectetur ornare. Nullam tincidunt metus non arcu egestas, quis lacinia elit suscipit. Phasellus
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item active">
+                                        <div class="carousel-content">
+                                            <div>
+                                                <h3 class="info-slider-title">URBAN PLAY - PLAY LIGHTS</h3>
+                                                <p class="info-slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at pharetra mauris, eget ullamcorper arcu. Ut iaculis lacus tempor est consectetur ornare. Nullam tincidunt metus non arcu egestas, quis lacinia elit suscipit. Phasellus interdum arcu nunc, sit amet fringilla ipsum pharetra varius. Nulla gravida metus vitae volutpat egestas. Fusce ac lectus commodo, fermentum ipsum vitae, congue odio
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at pharetra mauris, eget ullamcorper arcu. Ut iaculis lacus tempor est consectetur ornare. Nullam tincidunt metus non arcu egestas, quis lacinia elit suscipit. Phasellus
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at pharetra mauris, eget ullamcorper arcu. Ut iaculis lacus tempor est consectetur ornare. Nullam tincidunt metus non arcu egestas, quis lacinia elit suscipit. Phasellus
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    </div>
+    <div class="footer">
+            <div class="container">
+                <span class="footer-logo col-xs-4 col-sm-2 col-md-2"><img src="../images/logo-gray.png"/></span>
+                <ul class="footer-social col-xs-4 col-sm-3 col-md-2">
+                    <li><a href="" class="footer-facebook"></a> </li>
+                    <li><a href="" class="footer-twitter"></a></li>
+                </ul>
+                <ul class="footer-copyright hidden-xs col-sm-5 col-md-6">
+                    <li>Copyright © 2015 URBAN MATTERS FOR ALL</li>
+                    <li>All Rights Reserved.</li>
+                </ul>
+                <a href="http://www.thalerholding.com/" class="footer-partners col-xs-4 col-sm-2 col-md-2"><img src="../images/logo-thaler.png"/></a>
+
+            </div>
+
+        </div>
+
+
+</body>
+</html>

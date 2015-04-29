@@ -1,0 +1,539 @@
+/*! style.css v1.0.0 | MIT License | Hakan Kurt - Thaler */
+
+/*
+ * 1. BODY
+ * 2. HEADER
+ * 3. MAIN
+ * 4. FOOTER
+ * 5. EXTRA
+ */
+
+
+
+/*
+1. BODY
+  ========================================================================== */
+@font-face {
+    font-family:'ProximaNova-Light';
+    src: url('fonts/ProximaNova-Light_gdi.eot');
+    src: url('fonts/ProximaNova-Light_gdi.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova-Light_gdi.woff') format('woff'),
+    url('fonts/ProximaNova-Light_gdi.ttf') format('truetype'),
+    url('fonts/ProximaNova-Light_gdi.otf') format('opentype'),
+    url('fonts/ProximaNova-Light_gdi.svg#ProximaNova-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2666;
+}
+@font-face {
+    font-family:'ProximaNova-Regular';
+    src: url('fonts/ProximaNova-Regular_gdi.eot');
+    src: url('fonts/ProximaNova-Regular_gdi.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova-Regular_gdi.woff') format('woff'),
+    url('fonts/ProximaNova-Regular_gdi.ttf') format('truetype'),
+    url('fonts/ProximaNova-Regular_gdi.otf') format('opentype'),
+    url('fonts/ProximaNova-Regular_gdi.svg#ProximaNova-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2666;
+}
+@font-face {
+    font-family:'ProximaNova-Bold';
+    src: url('fonts/ProximaNova-Bold_gdi.eot');
+    src: url('fonts/ProximaNova-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova-Bold_gdi.woff') format('woff'),
+    url('fonts/ProximaNova-Bold_gdi.ttf') format('truetype'),
+    url('fonts/ProximaNova-Bold_gdi.otf') format('opentype'),
+    url('fonts/ProximaNova-Bold_gdi.svg#ProximaNova-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2666;
+}
+
+@font-face {
+    font-family:'GatsbyFLF-Regular';
+    src: url('fonts/GatsbyFLF_gdi.eot');
+    src: url('fonts/GatsbyFLF_gdi.eot?#iefix') format('embedded-opentype'),
+    url('fonts/GatsbyFLF_gdi.woff') format('woff'),
+    url('fonts/GatsbyFLF_gdi.ttf') format('truetype'),
+    url('fonts/GatsbyFLF_gdi.otf') format('opentype'),
+    url('fonts/GatsbyFLF_gdi.svg#GatsbyFLF-Regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-E002;
+}
+
+
+@font-face {
+    font-family:'HalloSans-Regular';
+    src: url('fonts/HalloSans_gdi.eot');
+    src: url('fonts/HalloSans_gdi.eot?#iefix') format('embedded-opentype'),
+    url('fonts/HalloSans_gdi.woff') format('woff'),
+    url('fonts/HalloSans_gdi.ttf') format('truetype'),
+    url('fonts/HalloSans_gdi.otf') format('opentype'),
+    url('fonts/HalloSans_gdi.svg#HalloSans-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+001D-0131;
+}
+
+body{
+    font-family:'ProximaNova-Regular';
+}
+body, html {
+    height: 100%;
+}
+.blue{
+    color: #1f3a93;
+}
+.white{
+    color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family:'GatsbyFLF-Regular';
+    line-height: 1;
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea{
+    background: none;
+    border: none;
+    border-color: #fff;
+    color: #fff;
+    box-shadow: none;
+    border-bottom: #fff solid 2px;
+}
+input[type="text"]:focus{
+    background: none;
+}
+input[type="submit"]{
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+}
+button:hover, button:focus, .button:hover, .button:focus{
+    background: #312d30;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    background: none;
+}
+h1{
+    font-size: 110px;
+    letter-spacing: -1px;
+}
+h2{
+    font-size: 72px;
+    letter-spacing: -1px;
+}
+.centered{
+    text-align: center;
+}
+.clearhr{
+    width: 100%;
+    height: 50px;
+    display: block;
+}
+/*
+2. HEADER
+  ========================================================================== */
+
+#header {
+    width: 100%;
+    height: 125px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+.logo{
+    background: url(../img/logo@2x.png);
+    background-size: 110px 106px;
+    width: 110px;
+    height: 106px;
+    display: block;
+    border: none;
+    margin-top: 10px;
+}
+ul.nav{
+    margin-top: 70px;
+}
+
+ul.nav, ul.nav li{
+    list-style: none;
+    float: right;
+}
+ul.nav li{
+    float: left;
+    margin-right: 30px;
+
+}
+ul.nav li a{
+    color:#8f9cc9;
+}
+nav ul li a.active{
+    color:#446cb3;
+    /* border-bottom: 1px solid #1f3a93; */
+}
+
+
+
+/*
+3. MAIN
+  ========================================================================== */
+
+section#about{
+    background: url(../img/tac.jpg) bottom center no-repeat;
+    background-color: #f3f3f3;
+    min-height: 100%;
+    padding-top: 20%;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+}
+
+section#join{
+    background: url(../img/joinbg.jpg);
+    background-attachment : fixed;
+    background-position   : top center;
+    background-size       : cover;
+    min-height: 100%;
+    color: #ffffff;
+    padding-top: 11%;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+}
+section#join h1{
+    margin: 20px 0;
+}
+
+blockquote.style5 {
+    font-family:'HalloSans-Regular';
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 70px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: none;
+    text-align: center;
+    color: #fff;
+    margin: 25px 0px;
+    background-image: url(../img/tirnaksol.png);
+    background-position: middle left;
+    background-repeat: no-repeat;
+}
+blockquote.style5 div {
+    /* padding-right: 50px; */
+    display: block;
+    background-image: url(../img/tirnaksag.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 9px;
+}
+
+section#investors{
+    background: linear-gradient(to left, #ffffff 50%, #c1cbed 50%);
+    padding-top: 13%;
+    overflow: hidden;
+    min-height: 100%;
+    width: 100%;
+    float: left;
+}
+
+section#investors h2{
+    margin-left: 60px;
+    line-height: 60px;
+}
+
+section#investors ul.investors li{
+    background: url(../img/minitac.png) top left no-repeat;
+    padding-left: 50px;
+    font-family: 'ProximaNova-Light';
+    color: #1f3a93;
+    font-size: 24px;
+    line-height: 24px;
+    list-style: none;
+    margin-bottom: 30px;
+}
+section#contact{
+    background: url(../img/contactbg.jpg);
+    background-attachment : fixed;
+    background-position   : top center;
+    background-size       : cover;
+    min-height: 90%;
+    padding-top: 10%;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+}
+section#contact h1{
+    margin: 50px 0;
+}
+
+
+section#about p{
+    color: #6b6a6a;
+    font-size: 16px;
+}
+
+.top-menu {height: 100% !important;}
+
+.footer{
+    font-family: 'ProximaNova-Light';
+    color: #929292;
+    font-size: 13px;
+    padding: 20px 0 14px 0;
+    height: 10%;
+    width: 100%;
+    float: left;
+}
+.footer a img{margin-top: 20px;}
+.sm{
+    text-align: right;
+}
+body.expanded {overflow: hidden;}
+body.expanded #header {height: 100% !important;}
+body.expanded .logo {width: 119px;height: 118px;background-size: 100%;}
+/*
+4. FOOTER
+  ========================================================================== */
+
+
+
+
+
+/*
+5. EXTRA
+  ========================================================================== */
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@media only screen and (max-width: 1029px) {
+    section#about{/* padding-top: 34%; */}
+    section#join{padding-top: 17%;}
+    section#investors{/* padding-top: 34%; */}
+    section#contact{padding-top: 9%;}
+
+    nav ul li a {font-size: 12px;}
+    .top-bar-section ul li > a {font-size: 12px;}
+    .top-bar-section ul li {margin-right: 10px}
+    h1{
+        font-size: 73px;
+
+        margin: 0;
+    }
+    p{
+        font-size: 15px !important;
+
+        padding: 0 6px 0 6px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    h1{
+        font-size: 78px;
+
+        margin: 0;
+    }
+    p{
+        font-size: 16px !important;
+
+        padding: 0 6px 0 6px;
+    }
+    blockquote.style5
+    {
+        font-size: 19px;
+        padding: 2px 0 2px 52px;
+        margin: 0;
+        background-size: 17px;
+        line-height: 20px;
+    }
+    section#join h1 {
+        margin: 0;
+
+        padding: 15px 0 0px 0;
+    }
+    section#investors h2 {
+        font-size: 50px;
+        margin-left: 23px;
+        line-height: 42px;
+
+        margin-bottom: 23px;
+    }
+    section#investors ul.investors li {
+        font-size: 17px;
+        margin-bottom: 52px;
+
+        line-height: 20px;
+    }
+
+}
+@media only screen and (max-width: 720px) {
+    section{
+        /*height: 690px !important;*/
+    }
+    section#about{/* padding-top: 100px; */}
+    .footer {/* margin-bottom: 90px; */}
+}
+@media (max-width: 641px) {
+    section#about .about-text{padding-top: 9%;}
+    section#investors { background: linear-gradient(to top, #ffffff 72%, #c1cbed 28%); }
+    section#investors .row { height: 100%; }
+
+    section#investors .inv-1 {        height: 36%; background: #c1cbed;    }
+    section#investors .inv-2 {        height: 36%;     }
+    section#about{padding-top: 30%;}
+    section#join{padding-top: 20%;}
+    section#investors{padding-top: 16%;}
+    section#contact{padding-top: 30%;}
+    .top-bar-section{
+        display: none;
+    }
+    .top-bar.expanded .top-bar-section ul li > a
+    {
+        text-align: center;
+        padding: 9px 0 9px 0;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .top-bar.expanded .top-bar-section ul li > a:hover
+    {
+        color: #aaaaaa;
+    }
+    .top-bar.expanded .top-bar-section ul
+    {
+        /* height: 50%; */
+        position: absolute;
+        top: calc(50% - 98px);
+
+
+        padding-right: 2em;
+    }
+
+    .top-bar.expanded .top-bar-section
+    {
+        position: fixed;
+        display: block;
+        /* height: 100% !important; */
+        width: 100%;
+        background-color: rgba(34, 33, 83, 0.95);
+        z-index: 9999;
+        color: #ffffff;
+
+    }
+    .top-bar.expanded .toggle-topbar.menu-icon
+    {
+        z-index: 999999;
+    }
+    .top-bar.expanded .toggle-topbar.menu-icon a
+    {
+        z-index: 999999;
+    }
+    .top-bar.expanded .toggle-topbar.menu-icon a span::after
+    {
+        box-shadow: none;
+
+        z-index: 99999;
+
+        content: "X";
+        font-size: 35px;
+        color: #ffffff;
+        line-height: 0;
+        padding-right: 26px;
+    }
+    #header {position: fixed;z-index: 99999;height: 78px;}
+    .logo {
+        background: url(../img/logo@2x.png);
+        background-size: 69px 65px;
+        width: 69px;
+        height: 65px;
+        display: block;
+        border: none;
+        margin-top: 7px;
+    }
+    h1{
+        font-size: 34px;
+
+        margin: 0;
+    }
+    p{
+        font-size: 15px !important;
+
+        padding: 0 6px 0 6px;
+    }
+    blockquote.style5
+    {
+        font-size: 12px;
+        padding: 2px 0 2px 7px;
+        margin: 0;
+        background-size: 10px;
+        line-height: 15px;
+    }
+    section#join h1 {
+        margin: 0;
+    }
+    section#investors h2 {
+        font-size: 51px;
+        margin-left: 23px;
+        line-height: 44px;
+    }
+    section#investors ul.investors li {
+        font-size: 15px;
+        margin-bottom: 10px;
+
+        line-height: 24px;
+    }
+
+}
+@media (max-width: 401px) {
+    section#about               { padding-top: 27%;}
+    section#about .about-text   { padding-top: 3%;}
+    section#join                { padding-top: 23%;}
+    section#investors           { padding-top: 28%;}
+    section#contact             { padding-top: 15%;}
+    p {padding: 0 0 0 0px;margin-bottom: 0;font-size: 10px !important;text-align: justify;}
+    section#investors ul.investors li { background-size: 16px; padding-left: 19px; margin-bottom: 0; font-size: 11px; line-height: 17px; }
+    section#investors h2        { margin: 0px 0 0 24px; font-size: 27px; line-height: 21px; }
+    .copyright                  { font-size: 9px;}
+    input[type="submit"]        { padding: 5px 15px 5px 15px; }
+    .footer a img               { height: 18px;margin-top: 10px;}
+    .footer                     { height: 7%;}
+}
